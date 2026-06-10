@@ -1,0 +1,49 @@
+# Jarvis Configuration File
+# Copy this to config.yaml and fill in your values
+
+# OpenAI API Configuration
+openai:
+  api_key: "your-openai-api-key-here"
+  model: "gpt-4"  # or gpt-3.5-turbo for faster/cheaper responses
+  temperature: 0.7  # Creativity level (0.0 to 1.0)
+  max_tokens: 2000  # Maximum response length
+
+# Voice Configuration
+voice:
+  enabled: true
+  input_enabled: true  # Enable speech recognition
+  output_enabled: true  # Enable text-to-speech
+  rate: 200  # Speaking rate (words per minute)
+  volume: 1.0  # Volume level (0.0 to 1.0)
+  engine: "say"  # macOS native TTS engine
+
+# System Integration
+system:
+  enable_commands: true  # Allow execution of system commands
+  enable_web_search: true  # Enable web search capability
+  max_command_timeout: 30  # Timeout for system commands (seconds)
+  safe_mode: true  # Restrict dangerous commands
+
+# Conversation Memory
+memory:
+  max_messages: 10  # Number of messages to keep in context
+  save_history: true  # Save conversation to file
+  history_file: "~/.jarvis_history"
+
+# Web Search
+search:
+  enabled: true
+  engine: "duckduckgo"  # or google if configured
+  max_results: 5
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "jarvis.log"
+  console: true
+
+# UI/UX
+ui:
+  show_thinking: true  # Show when Jarvis is processing
+  show_sources: true  # Show web search sources
+  clear_on_startup: true  # Clear terminal on start
