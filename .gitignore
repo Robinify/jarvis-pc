@@ -1,0 +1,41 @@
+# Virtual Environment
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuration
+config.yaml
+.env
+.env.local
+
+# Logs
+*.log
+jarvis.log
+
+# History
+.jarvis_history
+~/.jarvis_history
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
